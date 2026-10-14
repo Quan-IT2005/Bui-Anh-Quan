@@ -1,9 +1,63 @@
-﻿// Bùi Anh Quân - Interactive scripts
+﻿// Bùi Anh Quân - Interactive scripts & CV Modal
 document.addEventListener('DOMContentLoaded', () => {
+  // Modal Elements
+  const cvModal = document.getElementById('cvModal');
+  const openCvNavBtn = document.getElementById('openCvNavBtn');
+  const openCvHeroBtn = document.getElementById('openCvHeroBtn');
+  const openCvFooterBtn = document.getElementById('openCvFooterBtn');
+  const closeCvBtn = document.getElementById('closeCvBtn');
+  const closeCvFooterBtn = document.getElementById('closeCvFooterBtn');
+  const printCvBtn = document.getElementById('printCvBtn');
+
+  const openModal = () => {
+    if (cvModal) {
+      cvModal.classList.add('active');
+      cvModal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+  };
+
+  const closeModal = () => {
+    if (cvModal) {
+      cvModal.classList.remove('active');
+      cvModal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+  };
+
+  if (openCvNavBtn) openCvNavBtn.addEventListener('click', openModal);
+  if (openCvHeroBtn) openCvHeroBtn.addEventListener('click', openModal);
+  if (openCvFooterBtn) openCvFooterBtn.addEventListener('click', openModal);
+  if (closeCvBtn) closeCvBtn.addEventListener('click', closeModal);
+  if (closeCvFooterBtn) closeCvFooterBtn.addEventListener('click', closeModal);
+
+  // Close when click backdrop
+  if (cvModal) {
+    cvModal.addEventListener('click', (e) => {
+      if (e.target === cvModal) {
+        closeModal();
+      }
+    });
+  }
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && cvModal && cvModal.classList.contains('active')) {
+      closeModal();
+    }
+  });
+
+  // Print CV
+  if (printCvBtn) {
+    printCvBtn.addEventListener('click', () => {
+      window.print();
+    });
+  }
+
   // Copy Email interaction
   const copyBtn = document.getElementById('copyEmailBtn');
   const copyText = document.getElementById('copyBtnText');
-  const contactEmail = 'quan.it2005@gmail.com';
+  const contactEmail = 'dtc235200608@ictu.edu.vn';
 
   if (copyBtn) {
     copyBtn.addEventListener('click', async () => {
