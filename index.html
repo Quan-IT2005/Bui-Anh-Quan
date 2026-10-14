@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bùi Anh Quân | Web Developer Portfolio</title>
+  <meta name="description" content="Trang cá nhân của Bùi Anh Quân - Sinh viên CNTT, Web Developer từ Thái Nguyên.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="container nav-wrapper">
+      <a href="#hero" class="brand">
+        <span class="brand-badge">BAQ</span>
+        <span class="brand-name">Bùi Anh Quân</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#about" class="nav-link">Giới thiệu</a>
+        <a href="#skills" class="nav-link">Kỹ năng</a>
+        <a href="#journey" class="nav-link">Hành trình</a>
+        <a href="#contact" class="nav-btn">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge-status">
+            <span class="pulse-dot"></span>
+            <span>Sẵn sàng kết nối & học hỏi</span>
+          </div>
+          <h1 class="hero-title">
+            Xin chào, mình là <br>
+            <span class="gradient-text">Bùi Anh Quân</span> 👋
+          </h1>
+          <p class="hero-subtitle">
+            Sinh viên lớp <strong>CNTTK22H</strong> • <strong>21 tuổi</strong> • Quê hương <strong>Thái Nguyên</strong>.<br>
+            Định hướng <strong>Web Developer</strong> với tinh thần yêu thích sự tinh giản, giao diện mượt mà và thân thiện với người dùng.
+          </p>
+
+          <div class="hero-tags">
+            <span class="tag"><i class="fa-solid fa-graduation-cap"></i> CNTTK22H</span>
+            <span class="tag"><i class="fa-solid fa-code"></i> Web Developer</span>
+            <span class="tag"><i class="fa-solid fa-location-dot"></i> Thái Nguyên</span>
+            <span class="tag"><i class="fa-solid fa-cake-candles"></i> 21 Tuổi</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              <span>Trò chuyện cùng mình</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="https://github.com/Quan-IT2005" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub Profile</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-card-wrapper">
+            <div class="avatar-backdrop"></div>
+            <div class="avatar-card">
+              <img src="assets/avatar.jpg" alt="Bùi Anh Quân - Web Developer" class="avatar-img" />
+              <div class="avatar-float-badge float-top-right">
+                <i class="fa-solid fa-laptop-code"></i>
+                <div>
+                  <small>Định hướng</small>
+                  <strong>Web Dev</strong>
+                </div>
+              </div>
+              <div class="avatar-float-badge float-bottom-left">
+                <i class="fa-solid fa-heart" style="color: #ff5e7e;"></i>
+                <div>
+                  <small>Trạng thái</small>
+                  <strong>Sinh viên đam mê code</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Thông Tin Cá Nhân</span>
+          <h2 class="section-title">Hồ Sơ Bản Thân</h2>
+          <p class="section-desc">Gọn gàng, rõ ràng và luôn hướng tới sự chỉn chu trong từng chi tiết.</p>
+        </div>
+
+        <div class="cards-grid">
+          <div class="profile-card">
+            <div class="card-icon"><i class="fa-solid fa-user"></i></div>
+            <h3>Họ & Tên</h3>
+            <p class="card-highlight">Bùi Anh Quân</p>
+            <p class="card-sub">21 tuổi (Sinh năm 2005)</p>
+          </div>
+
+          <div class="profile-card">
+            <div class="card-icon"><i class="fa-solid fa-school"></i></div>
+            <h3>Lớp Học</h3>
+            <p class="card-highlight">CNTTK22H</p>
+            <p class="card-sub">Ngành Công nghệ Thông tin</p>
+          </div>
+
+          <div class="profile-card">
+            <div class="card-icon"><i class="fa-solid fa-map-pin"></i></div>
+            <h3>Quê Quán</h3>
+            <p class="card-highlight">Thái Nguyên</p>
+            <p class="card-sub">Vùng đất chè xanh hiền hòa</p>
+          </div>
+
+          <div class="profile-card">
+            <div class="card-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <h3>Công Việc Hiện Tại</h3>
+            <p class="card-highlight">Sinh viên</p>
+            <p class="card-sub">Học tập & Thực hành Web Dev</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-soft">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Kỹ Năng & Công Cụ</span>
+          <h2 class="section-title">Công Nghệ Mình Yêu Thích</h2>
+          <p class="section-desc">Tập trung vào nền tảng vững chắc và khả năng thích ứng linh hoạt.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-item">
+            <i class="fa-brands fa-html5 skill-icon" style="color: #e44d26;"></i>
+            <h4>HTML5</h4>
+            <span>Cấu trúc chuẩn ngữ nghĩa</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-brands fa-css3-alt skill-icon" style="color: #264de4;"></i>
+            <h4>CSS3 / Modern UI</h4>
+            <span>Flexbox, Grid & Animation</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-brands fa-js skill-icon" style="color: #f7df1e;"></i>
+            <h4>JavaScript</h4>
+            <span>DOM logic, ES6+</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-brands fa-react skill-icon" style="color: #61dafb;"></i>
+            <h4>React / Frontend</h4>
+            <span>Component-driven UI</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-brands fa-git-alt skill-icon" style="color: #f05032;"></i>
+            <h4>Git & GitHub</h4>
+            <span>Quản lý mã nguồn nhóm</span>
+          </div>
+          <div class="skill-item">
+            <i class="fa-solid fa-compass-drafting skill-icon" style="color: #06b6d4;"></i>
+            <h4>Responsive Design</h4>
+            <span>Tối ưu Mobile & Tablet</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section id="journey" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Định Hướng Phát Triển</span>
+          <h2 class="section-title">Hành Trình & Mục Tiêu</h2>
+          <p class="section-desc">Mỗi ngày tích luỹ kinh nghiệm để trở thành Web Developer đáng tin cậy.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-step">
+            <div class="step-marker">1</div>
+            <div class="step-card">
+              <span class="step-time">Giai đoạn 1</span>
+              <h3>Xây dựng nền tảng CNTT</h3>
+              <p>Nắm vững tư duy thuật toán, cấu trúc dữ liệu và kiến trúc hệ thống tại lớp CNTTK22H.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="step-marker">2</div>
+            <div class="step-card">
+              <span class="step-time">Giai đoạn 2</span>
+              <h3>Chuyên sâu Web Development</h3>
+              <p>Thực hành liên tục với các dự án thực tế, làm chủ UI/UX thân thiện và xây dựng API kết nối.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="step-marker">3</div>
+            <div class="step-card">
+              <span class="step-time">Giai đoạn 3</span>
+              <h3>Đóng góp & Vươn xa</h3>
+              <p>Tham gia các dự án thực chiến, đóng góp mã nguồn mở và phát triển các sản phẩm hữu ích.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-soft">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-content">
+            <span class="section-kicker">Kết Nối Với Mình</span>
+            <h2>Bạn có muốn trao đổi về dự án hoặc giao lưu học tập?</h2>
+            <p>Mình luôn sẵn lòng kết nối với các bạn sinh viên, mentor và cộng đồng công nghệ.</p>
+            <div class="contact-actions">
+              <a href="https://github.com/Quan-IT2005" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <i class="fa-brands fa-github"></i>
+                <span>Quan-IT2005 on GitHub</span>
+              </a>
+              <button id="copyEmailBtn" class="btn btn-secondary">
+                <i class="fa-regular fa-envelope"></i>
+                <span id="copyBtnText">Sao chép Email kết nối</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Bùi Anh Quân. Thiết kế với phong cách nhẹ nhàng & hiện đại.</p>
+      <div class="social-links">
+        <a href="https://github.com/Quan-IT2005" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
